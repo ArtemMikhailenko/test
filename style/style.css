@@ -1,0 +1,417 @@
+*{
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+* ,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    min-width: 20rem;
+    line-height: 1;
+    
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+button{
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    
+}
+/*-----------------------------------------------------------------*/
+
+body{
+    font-family: 'Rubik';
+    font-size: 0.875rem;
+    color: #646D70;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page{
+    flex: 1 1 auto;
+}
+[class*="__container"] {
+    max-width: 68.75rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin: 0 auto;
+    overflow:hidden;
+
+}
+
+.title {
+    
+    color: #fff;
+    font-size: 1.875rem;
+    line-height: 130%;
+
+}
+
+.title--dark{
+    color: #222f33;
+}
+.header {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    padding-top: 1.25rem;
+    max-width: 52.5rem;
+    margin: 0 auto;
+    font-size: 13px;
+    font-family: "Proxima Nova";
+    
+    }
+.header__menu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header__container {
+    align-items: center;
+    justify-content: center;
+    display: flex;    
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    min-height: 6.5625rem;
+    
+}
+.header__logo {
+    
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+   
+}
+.header__logo img {
+    width: 9rem;
+    padding: 0 20px;
+}
+@media (max-width: 39.0625em) {
+    .header__logo{
+        flex: 0 0 2.0625rem;
+    }
+    
+}
+
+.menu__list {
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+   
+    
+}
+.menu__list div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__item{
+   padding: 0 1.875rem;
+}
+
+.main-section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+
+
+}
+.main-section__container {
+  z-index: 2;
+display: flex;
+width: 100%;
+height: 100%;
+padding: 8.5rem 2.125rem;
+}
+.main-section__content {
+    flex: 0 0 54.320988%; /* 440/810 */
+}
+.main-section__label {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Filson Soft";
+    padding: 1.25rem 1.25rem;
+}
+.main-section__title{
+    font-family: "Filson Soft";
+    font-weight: 400;
+    font-size: 60px;
+    padding: 0 1.25rem;
+    font-style: normal;
+}
+.main-section__label:not(:last-child){
+    margin-bottom: 1rem;
+}
+.main-section__btn{
+    padding: 1.25rem;
+    font-family: "Filson Soft";
+    font-size: 20px;
+}
+button{
+    margin-top: 1rem;
+    padding: 0.625rem 2rem;
+    background-color:white;
+    border-radius: 2rem;
+    border: solid black 1px;
+    transition: all 0.3s;
+
+}
+.main-section__image {
+    position: absolute;
+    min-width: 100vw;
+    height:100vh;
+    top: 0;
+    left: 0;
+     overflow:hidden;
+    
+}
+.main-section__image img{
+    position: absolute;
+    object-fit: cover;
+    object-position: inherit;
+    width: 120%;
+    height: 110%;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+    
+}
+.page__materials__content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.page__materials_one{
+    width: 100%;
+    padding: 0 0.9375rem;
+    
+}
+.page__materials__content img {
+    width: 100%;
+    align-content: center;
+    padding-bottom: 3.125rem;
+}
+.page__materials_one h3 {
+    text-align: center;
+    padding-bottom: 1.25rem;
+    font-weight:500; 
+    font-family: "Filson Soft";
+}
+.page__materials_one p {
+    text-align: center;
+    font-family: "Proxima Nova";
+}
+.page__offer{
+    margin-top: 100px;
+    position: relative;
+    background-image: url('/image/banner-5.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-top: 100px;
+    
+}
+
+
+.page__offer__container{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.page__offer__title{
+    text-align: center;
+    padding: 0 15rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Filson Soft";
+    color: #fff;
+    padding-bottom: 2.5rem;
+}
+.page__offer__subtitle{
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #fff;
+}
+.page__offer__offers{
+    padding-top: 100px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.offers{
+    width: 9.375rem;
+    height: 6.25rem;
+    color: #fff;
+}
+.page__offer__offers img {
+    width: 100%;
+    padding-bottom: 0.625rem;
+}
+.page__feedback__title{
+    text-align: center;
+    font-family: "Filson Soft";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 12.5rem;
+    padding: 17px;
+}
+.page__feedback__content{
+    display: flex;
+    margin: 0 auto ; 
+    width: 43.75rem;
+    justify-content: space-between;
+    padding: 1.0625rem;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+.page__feedback__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.page__feedback__name{
+    font-family: "Filson Soft";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.page__feedback__image img{
+    max-width: 1.875rem;
+    max-height: 1.875rem;
+}
+.page__feedback_foot{
+    display: flex;
+    padding: 1.5625rem 1.0625rem;
+    width: 43.75rem;
+    margin: 0 auto;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+.page__feedback_foot a {
+    color:#c23f3e;
+}
+.page__questions{
+    background-color: #5c5c5c23;
+    height: 100%;
+    width: 100vw;
+    margin-top: 100px;
+    padding: 4.25rem 2.125rem;
+    
+}
+.page__questions__title{
+    text-align: center;
+    font-family: "Filson Soft";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 1.0625rem;
+}
+.page__questions__subtitle{
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    gap: 50px;
+    padding: 1.0625rem;
+
+}
+.questions__subtitle__one{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+    width: 45%;
+    
+    
+    
+}
+.questions__subtitle__two{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+    width: 45%;
+    
+    
+}
+.questions h3{
+    cursor: pointer;
+    color: #5c5c5c;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.questions h3::before{
+    content: '+';
+    color: #c23f3e;
+    
+
+}
+.questions p{
+    width: 100%;
+    padding-top: 10px;
+    border-top:#c23f3e 1px solid;
+    transition: border 0.2s step-end;
+    font-family: "Proxima Nova";
+}
